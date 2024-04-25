@@ -1,0 +1,68 @@
+@use "../resources" as Res;
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 2.5%;
+    padding: 0 10% 0 0;
+    gap: 2rem;  
+    font-size: 1rem;
+    a {
+        color: Res.$textColorWhite;
+        transition: color 0.5s ease;
+    }
+    a:hover {
+        color: Res.$aboutMe;
+    }
+    .toggle_btn {
+        display: none;
+    }
+}
+
+.dropdown_menu {
+    position: absolute;
+    right: 6%;
+    top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+    display: none;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+@media (max-width: 950px) {
+    .navigation {
+        padding-right: 5%;
+    }
+    .nav_links {
+        display: none;
+    }
+    .toggle_btn {
+        display: block !important;
+        font-size: 1.7rem;
+        color: Res.$textColorWhite;
+        cursor: pointer;
+    }
+    .dropdown_menu.open {
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        top: 6%;
+        left: 2rem;
+        width: unset;
+        text-align: center;
+        gap: 2.5rem;
+    }
+    .toggle_btn {
+        font-size: 1.9rem;
+    }
+}
