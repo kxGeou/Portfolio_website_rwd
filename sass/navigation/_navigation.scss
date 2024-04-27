@@ -5,8 +5,7 @@
     align-items: center;
     justify-content: right;
     margin-top: 2.5%;
-    padding: 0 10% 0 0;
-    gap: 2rem;  
+    gap: 3rem;  
     font-size: 1rem;
     a {
         color: Res.$textColorWhite;
@@ -31,15 +30,12 @@
     border-radius: 0.5rem;
     width: 10rem;
     display: none;
-    gap: 1.5rem;
+    gap: 2rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
 }
 
 @media (max-width: 950px) {
-    .navigation {
-        padding-right: 5%;
-    }
     .nav_links {
         display: none;
     }
