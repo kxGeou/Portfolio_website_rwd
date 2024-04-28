@@ -2,7 +2,6 @@
 
 .title_section {
     margin-top: 15%;
-
     span {
         background-image: linear-gradient(110deg, Res.$gradientOrangeSecond, Res.$gradientPinkSecond);
         background-size: 100%;
@@ -14,31 +13,115 @@
     }
 
     button {
-        height: 4rem;
-        width: 18rem;
+        height: 5rem;
+        width: 19rem;
         background-color: Res.$gradientOrangeSecond;
         border: none;
-
+        transition: all 0.5s;
+        cursor: pointer;
         a{
             color: Res.$textColorWhite;
             font-size: 1rem;
         }
     }
+    button:hover {
+        background-color: Res.$gradientOrangeHover;
+    }
 }
 .welcome_title {
     color: Res.$textColorWhite;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: normal;
     white-space: pre-line;
     letter-spacing: -2px;
-    line-height: 5rem * 1.1;
+    line-height: calc(100% * 1.1);
 }
 .welcome_desc {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    color: Res.$aboutMe;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
     font-size: 1.5rem;
-    color: Res.$descSite;
     white-space: pre-line;
-    line-height: 1.5rem * 1.5;
+    line-height: calc(100% * 1.5);
+}
+@media (max-width: 1400px) {
+    .title_section {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 10%;
+        padding-left: 5%;
+        button {
+            width: 17rem;
+            height: 4rem;
+        }
+    }
+    .welcome_title {
+        font-size: 4rem;
+        line-height: 4rem * 1.1;
+    }
+    .welcome_desc {
+        font-size: 1.3rem;
+    }
 }
 
+@media (max-width: 700px ) {
+    .title_section {
+        button {
+            height: 3.5rem;
+            width: 12rem;
+        }
+    }
+    .welcome_title {
+        font-size: 3.5rem;
+    }
+    .welcome_desc {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        line-height: calc(100% * 1.5);
+    }
+}
+
+@media (max-width: 575px) {
+    .title_section {
+        margin-top: 15%;
+        align-items: center;
+        button {
+            margin-top: 1rem;
+            width: 75%;
+        }
+    }
+    .welcome_title {
+        font-size: 3rem;
+        text-align: center;
+        white-space: normal;
+    }
+    .welcome_desc {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 460px ){
+    .title_section {
+        margin-top: 25%;
+    }
+    .welcome_title {
+        font-size: 2rem;
+        line-height: 2rem * 1.1;
+    }
+    .welcome_desc {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 320px ) {
+    .title_section {
+        button {
+            margin-top: 0.50rem;
+            height: 3rem;
+        }
+    }
+    .welcome_desc {
+        font-size: 0.78rem;
+    }
+}
