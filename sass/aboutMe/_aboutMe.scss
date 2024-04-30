@@ -1,0 +1,51 @@
+@use "../resources" as Res;
+
+@media (min-width: 320px){
+    .aboutMe{
+        margin-top: 2rem;
+        padding: 0rem 1rem;
+        .aboutMeBox {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                margin-bottom: 1.5rem;
+                font-weight: normal;
+                opacity: 50%;
+            }
+            p {
+                font-size: 0.9rem;
+                line-height: calc(100% * 1.5);
+            }
+        }
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 575px) {
+    .aboutMeBox {
+        h2 {
+            opacity: 100% !important;
+            background-image: linear-gradient(110deg, Res.$gradientOrangeSecond, Res.$gradientPinkSecond);
+            background-size: 50%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .aboutMe {
+        display: flex;
+        gap: 2rem;
+        img {
+            display: block;
+            background-color: white;
+            width: 13rem;
+            height: auto;
+        }
+    }
+}

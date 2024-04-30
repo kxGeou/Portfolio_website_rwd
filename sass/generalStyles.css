@@ -208,7 +208,7 @@
     flex-direction: column;
     align-items: start;
     margin-top: 10%;
-    padding: 0 2rem 0 2rem;
+    padding: 0 1rem 0 1rem;
   }
   .title_section button {
     width: 17rem;
@@ -347,7 +347,7 @@
 
 @media (max-width: 1400px) {
   .mySkills {
-    padding: 0 2rem 0 2rem;
+    padding: 0 1rem 0 1rem;
   }
   .mySkillsBox {
     row-gap: 3rem;
@@ -405,6 +405,51 @@
   }
   .skillBox p {
     font-size: 0.9rem;
+  }
+}
+@media (min-width: 320px) {
+  .aboutMe {
+    margin-top: 2rem;
+    padding: 0rem 1rem;
+  }
+  .aboutMe .aboutMeBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutMe .aboutMeBox h2 {
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+    opacity: 50%;
+  }
+  .aboutMe .aboutMeBox p {
+    font-size: 0.9rem;
+    line-height: 150%;
+  }
+  .aboutMe img {
+    display: none;
+  }
+}
+@media (min-width: 575px) {
+  .aboutMeBox h2 {
+    opacity: 100% !important;
+    background-image: linear-gradient(110deg, #f35e5e, #b60dba);
+    background-size: 50%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+}
+@media (min-width: 760px) {
+  .aboutMe {
+    display: flex;
+    gap: 2rem;
+  }
+  .aboutMe img {
+    display: block;
+    background-color: white;
+    width: 13rem;
+    height: auto;
   }
 }
 * {
