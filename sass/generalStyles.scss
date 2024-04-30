@@ -2,12 +2,15 @@
 @use "./blobb/blob.scss";
 @use "./navigation/navigation";
 @use "./header/header.scss";
+@use "./skills/mySkills";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+* {
+    color: #fff;
+}
 a {
     text-decoration: none;
 }

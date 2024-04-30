@@ -5,9 +5,9 @@
     align-items: center;
     justify-content: right;
     margin-top: 2.5%;
-    gap: 3rem;  
     font-size: 1rem;
     a {
+        margin-left: 2rem;
         color: Res.$textColorWhite;
         transition: color 0.5s ease;
     }
@@ -37,7 +37,11 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
 }
-
+@media (max-width: 1400px) {
+    .navigation {
+        padding:0 2rem 0 2rem;
+    }
+}
 @media (max-width: 950px) {
     .nav_links {
         display: none;
