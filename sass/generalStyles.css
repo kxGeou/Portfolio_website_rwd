@@ -63,11 +63,17 @@
   }
 }
 .navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: right;
-  margin-top: 2.5%;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
   font-size: 1rem;
+  z-index: 1000;
 }
 .navigation a {
   margin-left: 2rem;
@@ -103,12 +109,21 @@
 
 @media (max-width: 1400px) {
   .navigation {
+    margin-top: 2rem;
     padding: 0 2rem 0 2rem;
   }
 }
 @media (max-width: 950px) {
+  .navigation {
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
   .navigation a {
     margin-left: 0;
+  }
+  .dropdown_menu {
+    top: 3.5rem;
   }
   .nav_links {
     display: none;
@@ -136,9 +151,6 @@
   }
 }
 @media (max-width: 320px) {
-  .toggle_btn {
-    right: 1rem;
-  }
   .dropdown_menu {
     right: 1rem;
   }
@@ -156,19 +168,20 @@
   font-weight: 700;
 }
 .title_section button {
+  position: relative;
   height: 5rem;
   width: 19rem;
+  color: #fff;
   background-color: #f35e5e;
+  font-size: 1rem;
   border: none;
-  transition: all 0.5s;
+  transition: all 0.3s;
   cursor: pointer;
 }
-.title_section button a {
-  color: #fff;
-  font-size: 1rem;
-}
 .title_section button:hover {
-  background-color: #c23939;
+  color: #f35e5e;
+  background: none;
+  border: 2px solid #f35e5e;
 }
 
 .welcome_title {

@@ -1,11 +1,17 @@
 @use "../resources" as Res;
 
 .navigation {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: right;
-    margin-top: 2.5%;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
     font-size: 1rem;
+    z-index: 1000;
     a {
         margin-left: 2rem;
         color: Res.$textColorWhite;
@@ -39,14 +45,21 @@
 }
 @media (max-width: 1400px) {
     .navigation {
+        margin-top: 2rem;
         padding:0 2rem 0 2rem;
     }
 }
 @media (max-width: 950px) {
     .navigation {
+        justify-content: space-between;
+        padding: 1rem; 
+        margin-top: 0.5rem;
         a {
             margin-left: 0;
         }
+    }
+    .dropdown_menu {
+        top: 3.5rem;
     }
     .nav_links {
         display: none;
@@ -75,9 +88,6 @@
     }
 }
 @media (max-width: 320px) {
-    .toggle_btn {
-        right: 1rem;
-    }
     .dropdown_menu {
         right: 1rem;
     }

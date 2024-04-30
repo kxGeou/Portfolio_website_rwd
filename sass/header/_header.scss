@@ -13,19 +13,20 @@
     }
 
     button {
+        position: relative;
         height: 5rem;
         width: 19rem;
+        color: Res.$textColorWhite;
         background-color: Res.$gradientOrangeSecond;
+        font-size: 1rem;
         border: none;
-        transition: all 0.5s;
+        transition: all 0.3s;
         cursor: pointer;
-        a{
-            color: Res.$textColorWhite;
-            font-size: 1rem;
-        }
     }
     button:hover {
-        background-color: Res.$gradientOrangeHover;
+        color: Res.$gradientOrangeSecond;
+        background: none;
+        border: 2px solid Res.$gradientOrangeSecond;
     }
 }
 .welcome_title {
