@@ -43,6 +43,11 @@
     }
 }
 @media (max-width: 950px) {
+    .navigation {
+        a {
+            margin-left: 0;
+        }
+    }
     .nav_links {
         display: none;
     }
