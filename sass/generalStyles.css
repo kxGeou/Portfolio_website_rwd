@@ -292,7 +292,7 @@
   position: relative;
   font-weight: normal;
   font-size: 2.5rem;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
 }
 .mySkills h2::before {
   content: "";
@@ -409,7 +409,7 @@
 }
 @media (min-width: 320px) {
   .aboutMe {
-    margin-top: 2rem;
+    margin-top: 4rem;
     padding: 0rem 1rem;
   }
   .aboutMe .aboutMeBox {
@@ -420,9 +420,10 @@
     margin-bottom: 1.5rem;
     font-weight: normal;
     opacity: 50%;
+    font-size: 2rem;
   }
   .aboutMe .aboutMeBox p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 150%;
   }
   .aboutMe img {
@@ -439,6 +440,9 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
+  .aboutMeBox p {
+    font-size: 1.2rem;
+  }
 }
 @media (min-width: 760px) {
   .aboutMe {
@@ -448,8 +452,37 @@
   .aboutMe img {
     display: block;
     background-color: white;
-    width: 13rem;
+    width: 12rem;
     height: auto;
+  }
+  .aboutMeBox h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .aboutMe {
+    align-items: center;
+    margin-top: 8rem;
+  }
+  .aboutMe img {
+    width: 17rem;
+    height: auto;
+  }
+  .aboutMe .aboutMeBox p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .aboutMe img {
+    width: 17.5rem;
+  }
+  .aboutMe .aboutMeBox p {
+    font-size: 1.35rem;
+  }
+}
+@media (min-width: 1400px) {
+  .aboutMe img {
+    width: 24rem;
   }
 }
 * {
